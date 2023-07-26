@@ -1,163 +1,204 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Jane Doe - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Jane Doe
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          jdoe@jeemail.com
+
+<head>
+  <title>Jane Doe - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="home">
+      <div class="profile_name">
+        Jazeel Anwar
+        <div class="contact_info">
+          <img src="images/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope" />
+          jazeel@example.com
         </div>
         <div style="clear:both;"></div>
         <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          <img src="images/phone.png" alt="https://icons8.com/icon/124377/circled-envelope" />
           +13456764598
 
         </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
-
-        </div>
-      </div>    
-    </nav>
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
       </div>
-
-      <div>
-          <h1>
-            Hi, I'm Jane Doe! <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
-          </h1>
-          <p>
-            I am a full stack developer with 2 years of experience in both application and presentation layers.
-            I have worked on applications and microservices deployed on IBM Cloud. 
-            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
-          </p>
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <p>2 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
-          <p>3 years experience</p>
-        </div>  
-
-        <!-- Add more skills here -->
-
+      <div class="topdiv">
+        <a class="topmenu" href="#about-me">About Me</a>
+        <!-- Add the links for Skills, Projects and Recommendation here -->
+        <a class="topmenu" href="#skills">Skills</a>
+        <a class="topmenu" href="#projects">Project</a>
+        <a class="topmenu" href="#recommendations">Recommendation</a>
 
       </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Chatbot</h3>
-            <ul>
-              <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Sentiment Analyzer</h3>
-            <ul>
-              <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Fashion Website</h3>
-            <ul>
-              <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
-            </ul>
-          </div>
     </div>
-    </section>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img
+        src="data:image/png;base64,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"
+        class="profile_image" />
+    </div>
+
+    <div>
+      <h1>
+        Hi, I'm Jazeel Anwar! <img
+          src="https://static.vecteezy.com/system/resources/previews/006/037/810/original/waving-hand-gesture-emoji-color-icon-hello-hi-bye-goodbye-hand-gesturing-greeting-palm-isolated-illustration-vector.jpg"
+          width="60px" />
+      </h1>
+      <p>
+        I am a skilled web developer with expertise in HTML, CSS, and JavaScript, passionate about crafting visually
+        appealing and interactive websites.
+        With a keen eye for design and a strong grasp of front-end development,
+        I strive to create seamless user experiences that leave a lasting impact. From turning ideas into reality to
+        optimizing website performance,
+        I am dedicated to delivering high-quality solutions that elevate brands online.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
     <div style="clear:both;"></div>
 
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Jane is a very quick learner and quickly grasps key concepts of Web development. 
-          She got a great attitude & she is an excellent team player. 
-          She has a curious mind and asks the right question. 
-          She takes initiative within a team and has potentials to lead the team.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Working with Jane has been an awesome experience. 
-          She is highly knowledgable and always goes the extra step to make sure everything is right. 
-          For any future projects that need her expertise I would definitely want to work with her again.
-          <span>&#8221;</span>
-        </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I had worked along with Jane during the initial phase of our venture which needed Web development. 
-          She is a committed resource who has in depth knowledge about the domain. 
-          She will be an asset for any organisation! 
-          <span>&#8221;</span>
-        </div>
+    <div class="all_skills">
+      <div class="skill">
+        <img src="images/html5.png" />
+        <h6>HTML</h6>
+        <p>2 years experience</p>
       </div>
-    </section>
 
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
+      <div class="skill">
+        <img src="images/js.jpeg" />
+        <h6>JavaScript</h6>
+        <p>3 years experience</p>
       </div>
-    </section>
 
-    <div class="iconbutton">
-      <a href="#home">
-        <!--Add the code here for the logo to appear and the icon to be actionable-->
-      </a>
-    </div>
+      <!-- Add more skills here -->
+      <div class="skill">
+        <img src="images/CSS3.png" />
+        <h6>CSS</h6>
+        <p>3 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="images/react.png" />
+        <h6>React</h6>
+        <p>3 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="images/node.png" />
+        <h6>NodeJS</h6>
+        <p>3 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="images/java.png" />
+        <h6>Java</h6>
+        <p>3 years experience</p>
+      </div>
 
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3><!-- Add appropriate text here--></h3>
-      <button onclick="showPopup(false)">Ok</button>
+
+
     </div>
-  </body>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2>
+      Projects
+    </h2>
+    <div style="clear:both;"></div>
+
+    <div id="projects-container" class="projects-container">
+      <div class="project-card">
+        <h3>Speech Recognition</h3>
+        <ul>
+          <li>Projects were developed to enhance speech recognition technologies for various applications,
+            including transcription services and voice assistants.</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Language Translation</h3>
+        <ul>
+          <li>AI-driven language translation services like Google Translate were becoming more accurate and efficient,
+            breaking language barriers and enabling better communication globally</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="project-card">
+        <h3>Fashion Website</h3>
+        <ul>
+          <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a
+            shopping cart, using stripe for payment gateway</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div style="clear:both;"></div>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Jazeel Anwar is a very quick learner and quickly grasps key concepts of Web development.
+        He got a great attitude & he is an excellent team player.
+        He has a curious mind and asks the right question.
+        He takes initiative within a team and has potentials to lead the team.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        Working with Jazeel Anwar has been an awesome experience.
+        He is highly knowledgable and always goes the extra step to make sure everything is right.
+        For any future projects that need his expertise I would definitely want to work with his again.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        I had worked along with Jazeel during the initial phase of our venture which needed Web development.
+        He is a committed resource who has in depth knowledge about the domain.
+        He will be an asset for any organisation!
+        <span>&#8221;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendation Form -->
+  
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>
+        <input type="text" placeholder="Name (Optional)"> <br />
+        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <div class="iconbutton">
+    <a href="#home">
+      <!--Add the code here for the logo to appear and the icon to be actionable-->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+  </div>
+
+  <div class="popup" id="popup" class="flex_center">
+    <img src="images/checkmark--outline.svg" />
+    <h3>Thanks for leaving a recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+</body>
+
 </html>
